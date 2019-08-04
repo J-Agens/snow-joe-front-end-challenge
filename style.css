@@ -1,0 +1,165 @@
+/* MODAL STYLES */
+.modal-content {
+  border: none;
+  border-radius: 0;
+}
+
+.modal-title {
+  font-weight: 250;
+  border-bottom: 3px solid #0e39b9;
+  margin-bottom: -3px;
+}
+
+.modal-dialog {
+  max-width: 85vw;
+}
+
+.modal-dialog-centered {
+  align-items: flex-start;
+  min-height: calc(100% - 1rem);
+}
+
+.modal-header {
+  border-bottom: 3px solid #afafaf;
+  padding: 1rem 0 0 0;
+}
+
+.modal-footer {
+  border: none;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* CARD STYLES */
+img {
+  max-width: 250px;
+  max-height: 162px;
+  width: auto;
+  height: auto;
+}
+
+.card {
+  height: auto;
+  width: 80%;
+  border: none;
+  flex-direction: row;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  min-height: 65px;
+  margin-bottom: 0;
+}
+
+.card-body {
+  padding: 0;
+}
+
+.card-text {
+  font-size: 2rem;
+}
+
+.divider {
+  height: 2px;
+  background-color: black;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+#info-line {
+  display: none;
+}
+
+/* BUTTON STYLES */
+.btn {
+  border-radius: 0px;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: #0e39b9;
+  border-color: #0e39b9;
+}
+
+.add-one-btn {
+  background-color: white;
+  border: none;
+  color: #6c757d;
+  text-align: left;
+  padding-left: 0;
+}
+
+.add-all-btn {
+  width: 100%;
+}
+
+.btn-secondary {
+  background-color: white;
+  border: none;
+  color: #6c757d;
+  text-decoration: underline;
+}
+
+.checkout-btn {
+  color: #0e39b9;
+  border: 3px solid #0e39b9;
+}
+
+/* MEDIA QUERIES FOR DESKTOP DISPLAY */
+@media only screen and (min-width: 992px) {
+
+  .card-title {
+    font-size: .75rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+  }
+
+  .add-one-btn {
+    width: 100%;
+    background-color: #0e39b9;
+    border-color: #0e39b9;
+    color: white;
+    text-align: center;
+    padding: .375rem .75rem;
+  }
+
+  .modal-dialog {
+    max-width: 800px;
+  }
+
+  .card {
+    min-height: 275px;
+    width: auto;
+    flex-direction: column;
+  }
+
+  img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  #info-line {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .modal-dialog {
+    max-width: 1140px;
+  }
+
+  .card {
+    min-height: 350px;
+  }
+}
